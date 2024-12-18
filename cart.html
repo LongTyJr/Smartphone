@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng | Shop Công Nghệ LongTyJr </title>
+    <link rel="stylesheet" href="cart1.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="menu">
+            <div class="logo">
+                <img class="logo-img" src="logo.png" alt="logo">
+            </div>
+
+            <div class="tenthuonghieu">
+                <h2>𝑳𝑶𝑵𝑮𝑻𝒀𝑱𝑹_𝑷𝑯𝑶𝑵𝑬</h2>
+            </div>
+
+            <div class="menu-search">
+                <input type="text" id="searchInput" placeholder="Bạn muốn tìm gì?" class="menu-search-input" />
+                <button id="searchButton" class="search-icon">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+
+            <div class="shopping_cart">
+                <a href="">
+                    <img class="shopping_cart-img" src="https://img.pikbest.com/png-images/shopping-cart-icon---vector-template---transparent-background_1794341.png!sw800" alt="">
+                </a>
+            </div>
+
+            <div class="Login">
+                <a href="Login.html">
+                    <img class="Login_img" src="https://t4.ftcdn.net/jpg/00/97/04/17/360_F_97041798_p2WagIdjwzUs5zHW5nQYqONCx3ZuSVv7.jpg" alt="">
+                </a>
+            </div>
+
+        </div>
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="GioiThieu.html">Giới thiệu</a></li>
+                    <li><a href="sanpham.html">Sản phẩm</a></li>
+                    <li><a href="Dealhot.html">Deal hot</a></li>
+                    <li class="a--Lh"><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+    </header>
+
+    <main>
+        <section class="cart-container">
+            <h1>Giỏ hàng của bạn</h1>
+            <div class="cart-items"></div>
+            <div class="cart-summary">
+                <p><strong>Tổng cộng:</strong> <span class="total-price">0₫</span></p>
+                <button class="checkout">Đặt hàng</button>
+            </div>
+            <div class="order-success" id="orderSuccess">
+                <p>Bạn đã đặt hàng thành công!</p>
+                <button onclick="closeSuccessMessage()">Đóng</button>
+            </div>
+            
+        </section>
+        <script src="cart.js"></script>
+    </main>
+    
+</body>
+
+</html>
